@@ -16,13 +16,11 @@ Reverse | 30 | D20
 
 ## Solution
 1. Make a new directory for this challenge.
-	`mkdir transformation`
+	`mkdir crackme-py`
 2. Download the source by using wget.
-	`wget https://mercury.picoctf.net/static/e47483f88b12f2ab0c46315afc12f64d/enc`
-3. Attempt to vim into the file to see the source code... It's garbage characters.
-4. Copy the characters into an online decoder.
-	`https://dencode.com/en/`
-5. No results... Change encoding standard to UTF-16, then UTF-32, etc and check for a flag.
-6. Flag found using UTF-16 using Quoted-printable encoding.
+	`wget https://mercury.picoctf.net/static/2ff6c888060f14af5db1232e319547c9/crackme.py`
+3. Vim into the file and see what we're working with... Immediately see `bezos_cc_secret` variable and `rotate_const = 47`.
+4. Copy the variable into an online decoder and check the Rot47 decode... `https://dencode.com/en/`
+5. Success! Key found.
 
-> picoCTF{16_bits_inst34d_of_8_26684c20}
+> picoCTF{1|\/|_4_p34|\|ut_ef5b69a3}
