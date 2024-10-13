@@ -1,0 +1,9 @@
+# pwn.college | base64
+
+First, run the challenge.
+	/challenge/run
+
+You are given a string in base64. You must decode this string.
+Copy and paste that string in the python script.
+
+Run the python script to get your flag. (There are some bits before and after the flag that you can ignore).
