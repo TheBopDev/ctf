@@ -1,0 +1,6 @@
+# pwn.college | shellcode injection
+
+This one is faily straightfoward. Just copy and paste the asm code given in the slides.
+
+I wrote a bash script to compile the code for you.
+Just run the bash script, then cat it into the challenge.
